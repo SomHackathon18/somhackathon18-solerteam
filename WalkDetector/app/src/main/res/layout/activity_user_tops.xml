@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appenjoyer.developer.walkdetector.UserTops">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_top1"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignTop="@+id/img_top2"
+        android:layout_marginTop="92dp"
+        android:layout_toEndOf="@+id/btnFb"
+        android:layout_toRightOf="@+id/btnFb"
+        android:src="@mipmap/top1"
+        app:civ_border_color="#FFF"
+        app:civ_border_width="2dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="144dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_top2"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/img_first"
+        android:layout_marginStart="60dp"
+        android:layout_toLeftOf="@+id/btnFb"
+        android:layout_toStartOf="@+id/btnFb"
+        android:src="@mipmap/top2"
+        app:civ_border_color="#FFF"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_top3"
+        android:layout_width="96dp"
+        android:layout_height="93dp"
+        android:layout_above="@+id/img_top1"
+        android:layout_marginEnd="68dp"
+        android:layout_marginTop="172dp"
+        android:layout_toEndOf="@+id/img_second"
+        android:layout_toRightOf="@+id/img_second"
+        android:src="@mipmap/top3"
+        app:civ_border_color="#FFF"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_top3"
+        android:layout_alignLeft="@+id/img_second"
+        android:layout_alignStart="@+id/img_second"
+        android:text="Top3 de la setmana"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="203dp"
+        android:layout_height="78dp"
+        android:layout_above="@+id/btnInsta"
+        android:layout_alignLeft="@+id/img_second"
+        android:layout_alignStart="@+id/img_second"
+        android:lines="3"
+        android:text="Has estat la primera d'aquesta setmana, perquè no ho comparteixes?"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <Button
+        android:id="@+id/btnInsta"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView2"
+        android:background="@mipmap/insta"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <Button
+        android:id="@+id/btnWhats"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/img_tres"
+        android:layout_toRightOf="@+id/img_tres"
+        android:background="@mipmap/whatsapp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <Button
+        android:id="@+id/btnFb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/fb"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+
+</android.support.constraint.ConstraintLayout>

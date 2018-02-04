@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Mataró Camina</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_in_vehicle">In Vehicle</string>
+    <string name="activity_on_bicycle">On Bicycle</string>
+    <string name="activity_on_foot">Caminant</string>
+    <string name="activity_running">Correns</string>
+    <string name="activity_still">Parat</string>
+    <string name="activity_tilting">Tilting</string>
+    <string name="activity_walking">Caminant</string>
+    <string name="activity_unknown">Unknown</string>
+    <string name="timerVal">00:00:00</string>
+    <string name="pauseButtonLabel">Pause</string>
+    <string name="startButtonLabel">Start</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    //Api resource
+    <string name="apiUrlInsertUser">http://192.168.16.31:8080/users/insert</string>
+    <string name="apiUrlLoginUser">http://192.168.16.31:8080/users/login</string>
+    <string name="title_activity_login_page">LoginPage</string>
+    <string name="title_activity_top_users">TopUsersActivity</string>
+    <string name="title_activity_shop_list">ShopList</string>
+    <string name="apiUrlCoordSaveLocation">http://192.168.16.31:8080/coord/saveLocation</string>
+    <string name="title_activity_main_app">MainApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+
+</resources>
