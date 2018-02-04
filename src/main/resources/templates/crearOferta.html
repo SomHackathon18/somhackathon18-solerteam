@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="/fragments/header :: head"></th:block>
+    <title>Creació oferta</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+            <h1>Creació oferta</h1>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <form action="/createOferta" method="post">
+                    <div class="form-group">
+                        <label for="text">Descripcio:</label>
+                        <input type="text" name="descripcio" class="form-control" aria-describedby="descripHelp" placeholder="descripció"/>
+                        <small id="descripHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="text">ENABLE:</label>
+                        <input  class="form-check-input" type="radio" name="enable" value="true" />
+                        <label class="form-check-label" for="enableRadio">
+                            ON
+                        </label>
+                        <input class="form-check-input" type="radio" name="enable" value="false"/>
+                        <label class="form-check-label" for="enableRadio">
+                            OFF
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="punts">Punts</label>
+                        <input  class="form-control" type="number" name="punts" placeholder="punts que ofereix" />
+                    </div>
+
+                    <button class="btn btn-primary" type="submit" value="Crear Oferta">Crear Oferta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

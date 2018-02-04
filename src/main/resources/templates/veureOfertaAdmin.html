@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head >
+    <th:block th:replace="/fragments/header :: head"></th:block>
+    <title>Les meves ofertes</title>
+    <link  th:href="@{'~/css/menu.css'}" rel="stylesheet" />
+
+</head>
+<body>
+<div class="container">
+
+    <div class="col-md-12">
+        <table class="table table-striped">
+            <h1>Ofertes a administrar</h1>
+            <tr>
+                <th>Descripció oferta</th>
+                <th>Preu en punts</th>
+                <th>Configuració</th>
+
+            </tr>
+            <tr th:each="oferta : ${listaOfertas}">
+                <td th:text="${oferta.descripcio}">Descripció</td>
+                <td th:text="${oferta.punts}">Punts</td>
+                    <td>
+                        <div class="col-md-2">
+                            <form action="/auction/detail" method="get">
+                                <input type="hidden" name="auctionId"/>
+                                <button type="submit" class="btn btn-success">Detall</button>
+                            </form>
+                        </div>
+                        <div class="col-md-2">
+                            <form action="/auctionsown/formEdit" method="get">
+                                <input type="hidden" name="auctionId"/>
+                                <button type="submit" class="btn btn-success">Edit</button>
+                            </form>
+                        </div>
+                        <div class="col-md-2">
+                            <form action="/auctionsown/doDelete" method="post">
+                                <input type="hidden" name="auctionId"/>
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        </div>
+
+                    </td>
+
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
