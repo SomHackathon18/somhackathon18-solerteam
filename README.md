@@ -1,1 +1,0 @@
-# somhackathon18-solerteam
